@@ -1,6 +1,6 @@
 
 
-const elements = document.querySelectorAll(".nav-item");
+/* const elements = document.querySelectorAll(".nav-item");
 
 elements.forEach((element, index) => {
   console.log(element);
@@ -10,7 +10,7 @@ elements.forEach((element, index) => {
   });
   
 });
-
+ */
 
 
 //Counter
@@ -38,3 +38,15 @@ window.onscroll = function () {
     started = true;
   }
 };
+
+// Image Changing
+var counter = 1;
+setInterval(function(){
+  document.getElementById('radio' + counter).checked = true;
+  counter++;
+  if(counter > 4){
+    counter = 1;
+  }
+}, 5000);
+
+

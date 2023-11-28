@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Document</title>
   </head>
   <body>
@@ -13,20 +14,21 @@
           <h1>ALMANAR</h1>
         </a>
 
-        <ul>
-          <li class="nav-item active">
-            <a  href="#">Home</a>
+        <ul class="sidemenue">
+          <li class="nav-item  ">
+            <a href="#home">Home</a>
           </li>
-          <li  class="nav-item">
-            <a  href="#">About</a>
+          <li  class="nav-item ">
+            <a  href="#about">About</a>
           </li class="nav-item">
           <li class="nav-item">
-            <a href="#">Services</a>
+            <a href="#services">Services</a>
           </li>
           <li class="nav-item">
             <a href="#">Contact</a>
           </li>
         </ul>
+
       </nav>
       <div class="scroll-text-wrapper">
         <div class="scroll-text">
@@ -34,6 +36,52 @@
         </div>
       </div>
     </header>
+
+    <div class="slider-container">
+
+    
+      <div class="slider">
+        <div class="slides">
+          <!--radio buttons start-->
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <!--radio buttons end-->
+          <!--slide images start-->
+          <div class="slide first">
+            <img src="assets/images/img-1.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="assets/images/img-2.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="assets/images/img-3.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="assets/images/img-4.jpg" alt="">
+          </div>
+          <!--slide images end-->
+          <!--automatic navigation start-->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+          <!--automatic navigation end-->
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!--manual navigation end-->
+      </div>
+      <!--image slider end-->
+  </div>
     <section id="home">
       <div class="home-content">
         <div class="row">
@@ -166,12 +214,34 @@
         
         </div>
       </div>
-      <h1 class="test ">Test</h1>
-      <h1 class="test ">Test</h1>
-      <h1 class="test  ">Test</h1>
-      <h1 class="test active">Test</h1>
-      
     </section>
-    <script src="js/main.js"></script>
+
+     <section class="contact">
+      <div class="map">
+        <h2>Where you can find us</h2>
+        <p><i class="fa-solid fa-location-dot"></i> Ali Al Wardani, Ghulail, Jeddah 22413</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29677.66111540015!2d39.19711058713818!3d21.597332260875724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d1553d852431%3A0xdc560956f0253e5f!2sAl-Manar%2C%20Jeddah!5e0!3m2!1sen!2ssa!4v1701168438199!5m2!1sen!2ssa" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+      </div>
+
+      <div class="footer">
+        <div class="footer-row">
+          <div class="footer-col1">
+            <p>Copyright © 2023 SALEM ALMAHDI.</p>
+            <p>Design: SALEM ALMAHDI</p>
+          </div>
+          <div class="footer-col2">
+           
+            <p> <i class="fa-solid fa-envelope" style="color: #ff0000;"></i> sa.01.swe@gmail.com</p>
+            
+            <p><i class="fa-solid fa-phone" style="color: #1f7028;"></i> +966 50 418 6383</p>
+          </div>
+        </div>
+       
+       
+      </div>
+     </section>
+    
+    <script src="main.js"></script>
   </body>
 </html>
