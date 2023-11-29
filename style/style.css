@@ -424,8 +424,8 @@ marquee {
   }
 
   .slider {
-    width: 400px;
-    height: 250px;
+    width: 700px;
+    height: 650px;
     border-radius: 5px;
     overflow: hidden;
   }
@@ -446,8 +446,8 @@ marquee {
   }
 
   .slide img {
-    width: 400px;
-    height: 250px;
+    width: 700px;
+    height: 650px;
   }
 
   /*css for manual slide navigation*/
@@ -458,6 +458,8 @@ marquee {
     margin-top: -40px;
     display: flex;
     justify-content: center;
+    bottom: 0;
+    padding-bottom: 20px;
   }
 
   .manual-btn {
@@ -500,6 +502,8 @@ marquee {
     width: 400px;
     justify-content: center;
     margin-top: 210px;
+    padding-bottom: 20px;
+    bottom: 0;
   }
 
   .navigation-auto div {
@@ -658,6 +662,8 @@ marquee {
 
   .footer-row {
     display: flex;
+    font-size: 12px;
+    
   }
 
   .footer-col1 {
@@ -668,6 +674,8 @@ marquee {
   }
   .footer-col1 p {
     padding-top: 10px;
+    
+   
   }
   .footer-col2 {
     text-align: center;
