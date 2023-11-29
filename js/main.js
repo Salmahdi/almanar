@@ -50,3 +50,19 @@ setInterval(function(){
 }, 5000);
 
 
+
+//sidemenu
+
+let sidemenue = document.querySelector(".top-nav ul");
+
+function openmenue() {
+  
+  sidemenue.style.display = "flex";
+}
+
+function closemenue() {
+  if (sidemenue.style.display == "flex") {
+    
+    sidemenue.style.display = "none";
+  }
+}

@@ -14,20 +14,22 @@
           <h1>ALMANAR</h1>
         </a>
 
-        <ul class="sidemenue">
+        <ul>
           <li class="nav-item  ">
-            <a href="#home">Home</a>
+            <a onclick="closemenue()" href="#home">Home</a>
           </li>
           <li  class="nav-item ">
-            <a  href="#about">About</a>
+            <a onclick="closemenue()" href="#about">About</a>
           </li class="nav-item">
           <li class="nav-item">
-            <a href="#services">Services</a>
+            <a onclick="closemenue()" href="#services">Services</a>
           </li>
           <li class="nav-item">
-            <a href="#">Contact</a>
+            <a onclick="closemenue()" href="#contact">Contact</a>
           </li>
+          <div class="close-icon" onclick="closemenue()"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></div>
         </ul>
+        <div class="open-icon" onclick="openmenue()"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></div>
 
       </nav>
       <div class="scroll-text-wrapper">
@@ -216,7 +218,7 @@
       </div>
     </section>
 
-     <section class="contact">
+     <section id="contact">
       <div class="map">
         <h2>Where you can find us</h2>
         <p><i class="fa-solid fa-location-dot"></i> Ali Al Wardani, Ghulail, Jeddah 22413</p>
@@ -242,6 +244,6 @@
       </div>
      </section>
     
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
