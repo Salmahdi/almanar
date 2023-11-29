@@ -69,18 +69,19 @@ body {
   justify-content: center;
   align-items: center;
   background: var(--dark);
+
 }
 
 .slider {
-  width: 800px;
-  height: 500px;
-  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  /* border-radius: 10px; */
   overflow: hidden;
 }
 
 .slides {
   width: 500%;
-  height: 500px;
+  height: 100%;
   display: flex;
 }
 
@@ -94,18 +95,20 @@ body {
 }
 
 .slide img {
-  width: 800px;
-  height: 500px;
+  width: 100%;
+  height: 100%;
 }
 
 /*css for manual slide navigation*/
 
 .navigation-manual {
   position: absolute;
-  width: 800px;
-  margin-top: -40px;
+  width: 100%;
+  /* margin-top: -40px; */
   display: flex;
   justify-content: center;
+  bottom: 0;
+  padding-bottom: 20px;
 }
 
 .manual-btn {
@@ -145,9 +148,11 @@ body {
 .navigation-auto {
   position: absolute;
   display: flex;
-  width: 800px;
+  width: 100%;
   justify-content: center;
-  margin-top: 460px;
+  /* margin-top: 460px; */
+  bottom: 0;
+  padding-bottom: 20px;
 }
 
 .navigation-auto div {
@@ -420,41 +425,41 @@ marquee {
     height: 90vh;
     justify-content: center;
     align-items: center;
-    background: var(--dark);
+    background: var(--white);
   }
 
   .slider {
-    width: 700px;
-    height: 650px;
-    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    /* border-radius: 10px; */
     overflow: hidden;
   }
-
+  
   .slides {
-    width: 250%;
-    height: 250px;
+    width: 500%;
+    height: 100%;
     display: flex;
   }
-
+  
   .slides input {
     display: none;
   }
-
+  
   .slide {
     width: 40%;
     transition: 2s;
   }
-
+  
   .slide img {
-    width: 700px;
-    height: 650px;
+    width: 100%;
+    height: 100%;
   }
 
   /*css for manual slide navigation*/
 
   .navigation-manual {
     position: absolute;
-    width: 400px;
+    width: 100%;
     margin-top: -40px;
     display: flex;
     justify-content: center;
@@ -499,7 +504,7 @@ marquee {
   .navigation-auto {
     position: absolute;
     display: flex;
-    width: 400px;
+    width: 100%;
     justify-content: center;
     margin-top: 210px;
     padding-bottom: 20px;
